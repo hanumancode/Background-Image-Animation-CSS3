@@ -1,5 +1,7 @@
 body, html {
-
+    margin: 0;
+    height: 100%;
+    font-family: serif;
 }
 
 .headline {
@@ -39,4 +41,41 @@ body, html {
     -webkit-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
+    animation: animate 60s linear 10ms infinite;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    z-index: -2;
+}
+
+.headlineText {
+    width: 60%;
+    /* padding: 35% 10% 0 10%; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.headlineText h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    background-color: rgba(0,0,0,0.2);
+    padding: 15px;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(1)
+    }
+
+    100% {
+        transform: scale(1.5)
+    }
 }
