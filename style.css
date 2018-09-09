@@ -1,0 +1,42 @@
+body, html {
+
+}
+
+.headline {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.headline:after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+}
+
+.headline:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
+    -moz-backface: translateZ(0) scale(1.0, 1.0);
+    -ms-backface-transform: translateZ(0) scale(1.0, 1.0);
+    -o-transform: translateZ(0) scale(1.0, 1.0);
+    transform: translateZ(0) scale(1.0, 1.0);
+    background: url(london.jpeg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
